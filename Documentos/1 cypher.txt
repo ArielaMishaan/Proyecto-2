@@ -1,0 +1,12 @@
+CREATE(Diego:Person{nombre:'Diego Soto', fecha:2004,sexo:'m',presupuesto:5000,usuario:'DiSoto',contrasenia: 'DiSoto'})
+CREATE(Ignacio:Person{nombre:'Ignacio Méndez', fecha:2003,sexo:'m',presupuesto:500,usuario:'IgMe',contrasenia: 'IgMe'})
+CREATE(Jimena:Person{nombre:'Jimena López', fecha:2003,sexo:'f',presupuesto:6000,usuario:'Jime',contrasenia: 'Jime'})
+
+CREATE (BuenosAires: Lugar {nombre:'Buenos Aires', continente: 'Suramérica', pais: 'Argentina', idioma: 'español', atracciones: 2895, moneda: 'Peso argentino', rating: 40})
+CREATE (NYC: Lugar {nombre:'New York City', continente: 'Norteamérica', pais: 'Estados Unidos', idioma: 'inglés', atracciones: 6312, moneda: 'Dólar estadounidense', rating: 8})
+
+CREATE
+(Diego)-[:FUE]->(BuenosAires),
+(Ignacio)-[:QUIERE_IR]->(NYC),
+(Jimena)-[:NO_GUSTO]->(BuenosAires),
+(Diego)-[:GUSTO]->(BuenosAires)
