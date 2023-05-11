@@ -34,7 +34,7 @@
     position: relative;
 }
 
-.form-box h1 ::after{
+.form-box h1::after{
     content: '';
     width: 30px;
     height: 4px;
@@ -44,4 +44,53 @@
     bottom: -12px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.input-field{
+    background:#eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+}
+
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a{
+    text-decoration: none;
+    color: rgba(57,102,153);
+}
+
+.btn-fiel{
+    width: 100%;
+    display: felx;
+    justify-content: space-between;
+}
+
+.btn-fiel button{
+    flex-basis: 48%;
+    background: rgba(57,102,153);
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
 }
