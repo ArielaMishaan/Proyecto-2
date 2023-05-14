@@ -1,0 +1,26 @@
+CREATE(Diego:Person{nombre:'Diego Soto', fecha:2004,sexo:'m',presupuesto:5000, vive:'Guatemala'})
+CREATE(Ignacio:Person{nombre:'Ignacio Méndez', fecha:2003,sexo:'m',presupuesto:500,vive:'Guatemala'})
+CREATE(Jimena:Person{nombre:'Jimena López', fecha:2003,sexo:'f',presupuesto:6000,vive:'Guatemala'})
+CREATE(Ariela:Person{nombre:'Ariela Mishaan', fecha:2003,sexo:'f',presupuesto:3000,vive:'Guatemala'})
+CREATE(Tanya:Person{nombre:'Tanya Carias', fecha:1998,sexo:'f',presupuesto:100,vive:'Guatemala'})
+
+CREATE (BuenosAires: Lugar {nombre:'Buenos Aires', continente: 'Suramérica', pais: 'Argentina', idioma: 'español', atracciones: 2895, moneda: 'ARS', rating: 40})
+CREATE (NYC: Lugar {nombre:'New York City', continente: 'Norteamérica', pais: 'Estados Unidos', idioma: 'inglés', atracciones: 6312, moneda: 'USD', rating: 8})
+CREATE (Santorini: Lugar {nombre:'Santorini', continente: 'Europa', pais: 'Grecia', idioma: 'griego', atracciones: 913, moneda: 'EUR', rating: 1})
+CREATE (Miami: Lugar {nombre:'Miami', continente: 'Norteamérica', pais: 'Estados Unidos', idioma: 'inglés', atracciones: 1679, moneda: 'USD', rating: 2})
+CREATE (Cairo: Lugar {nombre:'Cairo', continente: 'África', pais: 'Egipto', idioma: 'árabe', atracciones: 1721, moneda: 'EGP', rating: 3})
+
+CREATE
+(Diego)-[:FUE]->(BuenosAires),
+(Ignacio)-[:QUIERE_IR]->(NYC),
+(Jimena)-[:NO_GUSTO]->(BuenosAires),
+(Diego)-[:GUSTO]->(BuenosAires),
+(Ariela)-[:QUIERE_IR]->(Santorini),
+(Ariela)-[:QUIERE_IR]->(BuenosAires),
+(Ariela)-[:GUSTO]->(Miami),
+(Ariela)-[:FUE]->(Miami),
+(Ariela)-[:FUE]->(NYC),
+(Ariela)-[:GUSTO]->(NYC),
+(Tanya)-[:QUIERE_IR]->(Cairo),
+
+
