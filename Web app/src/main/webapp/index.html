@@ -49,11 +49,9 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <a class="active" href="#home">Home</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#news">Iniciar sesión</a>
+                    <a href="#lugaresPop">Lugares</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#contact">Registro</a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#about">Actualizar datos</a>
+                    <a href="about.html">Recomendaciones</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <!-- </topbar> -->
                 </div>
@@ -80,8 +78,7 @@
                         <p>Recomendaciones basadas en información real, acertadas y perfectas para tu próximo viaje.</p>
                         
                         <div class = "banner-btn">
-                            <a href = "#"><span></span>Registrarse</a>
-                            <a href = "#"><span></span>Ingresar</a>
+                            <a href = "about.html"><span></span>Ingresar</a>
                         </div>
                     </div>
 
@@ -125,7 +122,7 @@
                             <div class = "lugar-desc">
                                 <h3>Cairo</h3>
                                 <hr>
-                                <p>adlkf alksdf kasjd fñlakjdñfl akjdñlfkj añldsjf ñaldjf ñlajdsñlf jañañlsdk fjañlkdjf ñal</p>
+                                <p>Capital de Egipto (África). Se habla árabe, y utiliza la libra egipcia (EGP). Se encuentra cerca del río Nilo y contiene las pirámides de Giza, al igual que la famosa esfinge.</p>
                             </div>
                         </div>
 
@@ -135,7 +132,7 @@
                             <div class = "lugar-desc">
                                 <h3>Los Alpes Suizos</h3>
                                 <hr>
-                                <p>adlkf alksdf kasjd fñlakjdñfl akjdñlfkj añldsjf ñaldjf ñlajdsñlf jañañlsdk fjañlkdjf ñal</p>
+                                <p>Es la mayor parte del territorio suizo. La lengua principal es el suizo-alemán, y la moneda es el franco suizo. Es un buen lugar para ir a relajarse.</p>
                             </div>
                         </div>
 
@@ -145,7 +142,7 @@
                             <div class = "lugar-desc">
                                 <h3>Londres</h3>
                                 <hr>
-                                <p>adlkf alksdf kasjd fñlakjdñfl akjdñlfkj añldsjf ñaldjf ñlajdsñlf jañañlsdk fjañlkdjf ñal</p>
+                                <p>Capital de Inglaterra y del Reino Unido. La moneda que se usa es la libra esterlina, y se habla el inglés. Es la segunda ciudad más grande de Europa.</p>
                             </div>
                         </div>
                         
@@ -155,7 +152,7 @@
                             <div class = "lugar-desc">
                                 <h3>Machu Pichu</h3>
                                 <hr>
-                                <p>adlkf alksdf kasjd fñlakjdñfl akjdñlfkj añldsjf ñaldjf ñlajdsñlf jañañlsdk fjañlkdjf ñal</p>
+                                <p>Esta reliquia arqueológica se encuentra en Perú, y forma parte del Patrimonio de la Humanidad de Unesco. También es una de las 7 maravillas del mundo.</p>
                             </div>
                         </div>
                         
@@ -165,7 +162,7 @@
                             <div class = "lugar-desc">
                                 <h3>Santorini</h3>
                                 <hr>
-                                <p>adlkf alksdf kasjd fñlakjdñfl akjdñlfkj añldsjf ñaldjf ñlajdsñlf jañañlsdk fjañlkdjf ñal</p>
+                                <p>Pequeño archipiélago ubicado en grecia, en el mar Egeo. Su capital es Fira, y cuenta con 17 430 habitantes. Se habla griego y se usa el euro.</p>
                             </div>
                         </div>
                         
@@ -175,7 +172,7 @@
                             <div class = "lugar-desc">
                                 <h3>Alaska</h3>
                                 <hr>
-                                <p>adlkf alksdf kasjd fñlakjdñfl akjdñlfkj añldsjf ñaldjf ñlajdsñlf jañañlsdk fjañlkdjf ñal</p>
+                                <p>Estado de Estados Unidos, al lado de Canadá. Su ciudad más poblada es Anchorage y su idioma oficial es el inglés. Se usa el USD como moneda.</p>
                             </div>
                         </div>
 
@@ -592,7 +589,13 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
-
+    
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	        speed: 1000,
+	        speedAsDuration: true
+        });
+    </script>
 </body>
 
 </html>
