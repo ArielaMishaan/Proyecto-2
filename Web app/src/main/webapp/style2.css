@@ -395,10 +395,77 @@ hr{
     top: 35%;
     transform: translate(-50%, -50%)
 }
-@media screen and (max-width: 770px){
-    .pie-left,.pie-right{
-        flex-basis: 100%;
-        font-size:14px;
-    }
+
+.heading2{
+    text-align: center;
+    padding:2.5rem 0
 }
 
+.heading2 span{
+    font-size: 2.5rem;
+    background: rgb(57, 102, 153);
+    color: rgb(209, 215, 222);
+    border-radius: .3rem;
+    padding: 1rem 1rem;
+    display: inline-block;
+}
+
+#Recomendaciones{
+    /* background: linear-gradient(rgba(0,0,0,0.5),rgb(248, 249, 252)),url(img/playa2.jpg); */
+    background: url(img/playa2.jpg);
+    background-size:cover;
+    background-position: top;
+    height: 20vh;
+}
+@media screen and (max-width: 770px){
+    .Recomendaciones-col{
+        flex-basis: 100%;
+    }
+    html{
+        font-size: 50%;
+    }
+
+    .heading2 span{
+        font-size: 2.5rem;
+    }
+
+
+    
+}
+
+.Recomendaciones .row form .inputBox h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color:rgb(57, 102, 153);
+}
+.Recomendaciones .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.Recomendaciones .row .image{
+    flex:1 1 40rem;
+}
+.Recomendaciones .row .image img{
+    width: 100%;
+}
+
+.Recomendaciones .row .image form{
+    flex:1 1 40rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+    border-radius: .5rem;
+}
+.Recomendaciones .row form .inputBox{
+    padding: .5rem 0;
+}
+.Recomendaciones .row form .inputBox input{
+    width: 100%;
+    padding: 1rem;
+    border: 1rem solid rgba(0,0,0,0.1);
+    font-size: 1.7rem;
+    color:rgb(57, 102, 153);
+    text-transform: none;
+}
