@@ -31,35 +31,43 @@ public class MoviesByActor extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
+	
+
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doGet2(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		PrintWriter out = response.getWriter();
 	 	response.setContentType("application/json");
 	 	response.setCharacterEncoding("UTF-8");
-	 	JSONObject myResponse = new JSONObject();
 	 	
-	 	JSONArray PeliculasActor = new JSONArray();
+		JSONObject myResponse = new JSONObject();
+	 	JSONArray Lugares = new JSONArray();
 	 	
-	 	String myActor = request.getParameter("actor_name");
-	 	 try ( EmbeddedNeo4j greeter = new EmbeddedNeo4j( "bolt://44.204.214.214:7687", "neo4j", "circuitry-landings-infections" ) )
+	 	String myContinente = request.getParameter("continente");
+	 	String myClima = request.getParameter("clima");
+	 	 try ( EmbeddedNeo4j greeter = new EmbeddedNeo4j( "bolt://3.208.92.10:7687", "neo4j", "abrasives-educators-bucket" ) )
 	        {
-			 	LinkedList<String> myactors = greeter.getMoviesByActor(myActor);
+			 	LinkedList<String> paisesContinente = greeter.getLugarByContinente(myContinente);
+			 	LinkedList<String> paisesClima = greeter.getLugarByClima(myClima);
 			 	
-			 	for (int i = 0; i < myactors.size(); i++) {
+			 	for (int i = 0; i < paisesContinente.size(); i++) {
 			 		 //out.println( "<p>" + myactors.get(i) + "</p>" );
-			 		PeliculasActor.add(myactors.get(i));
+			 		Lugares.add(paisesContinente.get(i));
 			 	}
+				 for (int i = 0; i < paisesClima.size(); i++) {
+					//out.println( "<p>" + myactors.get(i) + "</p>" );
+				   Lugares.add(paisesClima.get(i));
+			   }
 	        	
 	        } catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 	 	
-	 	myResponse.put("conteo", PeliculasActor.size()); //Guardo la cantidad de actores
-	 	myResponse.put("peliculas", PeliculasActor);
+	 	myResponse.put("conteo", Lugares.size()); //Guardo la cantidad de actores
+	 	myResponse.put("lugares", Lugares);
 	 	out.println(myResponse);
 	 	out.flush();  
 	 	

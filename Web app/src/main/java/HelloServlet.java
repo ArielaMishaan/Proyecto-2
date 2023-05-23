@@ -89,6 +89,46 @@ public class HelloServlet extends HttpServlet {
 	}
 
 	/**
+	 * @see HttpServlet#doGet2(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet2(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		PrintWriter out = response.getWriter();
+	 	response.setContentType("application/json");
+	 	response.setCharacterEncoding("UTF-8");
+	 	
+		JSONObject myResponse = new JSONObject();
+	 	JSONArray Lugares = new JSONArray();
+	 	
+	 	String myContinente = request.getParameter("continente");
+	 	String myClima = request.getParameter("clima");
+	 	 try ( EmbeddedNeo4j greeter = new EmbeddedNeo4j( "bolt://44.204.214.214:7687", "neo4j", "circuitry-landings-infections" ) )
+	        {
+			 	LinkedList<String> paisesContinente = greeter.getLugarByContinente(myContinente);
+			 	LinkedList<String> paisesClima = greeter.getLugarByClima(myClima);
+			 	
+			 	for (int i = 0; i < paisesContinente.size(); i++) {
+			 		 //out.println( "<p>" + myactors.get(i) + "</p>" );
+			 		Lugares.add(paisesContinente.get(i));
+			 	}
+				 for (int i = 0; i < paisesClima.size(); i++) {
+					//out.println( "<p>" + myactors.get(i) + "</p>" );
+				   Lugares.add(paisesClima.get(i));
+			   }
+	        	
+	        } catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	 	
+	 	myResponse.put("conteo", Lugares.size()); //Guardo la cantidad de actores
+	 	myResponse.put("lugares", Lugares);
+	 	out.println(myResponse);
+	 	out.flush();  
+	 	
+	}
+
+	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

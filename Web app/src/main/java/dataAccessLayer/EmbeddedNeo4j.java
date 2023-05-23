@@ -110,7 +110,61 @@ public class EmbeddedNeo4j implements AutoCloseable{
             return actors;
         }
    }
-    
+
+   public LinkedList<String> getLugarByContinente(final String continente)
+    {
+   	 try ( Session session = driver.session() )
+        {
+   		 
+   		 
+   		 LinkedList<String> actors = session.readTransaction( new TransactionWork<LinkedList<String>>()
+            {
+                @Override
+                public LinkedList<String> execute( Transaction tx )
+                {
+                    Result result = tx.run( "MATCH (n:Lugar WHERE n.continente = '" + continente + "' RETURN n.nombre");
+                    LinkedList<String> myactors = new LinkedList<String>();
+                    List<Record> registros = result.list();
+                    for (int i = 0; i < registros.size(); i++) {
+                   	 //myactors.add(registros.get(i).toString());
+                   	 myactors.add(registros.get(i).get("nombre").asString());
+                    }
+                    
+                    return myactors;
+                }
+            } );
+            
+            return actors;
+        }
+   }
+
+   public LinkedList<String> getLugarByClima(final String clima)
+    {
+   	 try ( Session session = driver.session() )
+        {
+   		 
+   		 
+   		 LinkedList<String> actors = session.readTransaction( new TransactionWork<LinkedList<String>>()
+            {
+                @Override
+                public LinkedList<String> execute( Transaction tx )
+                {
+                    Result result = tx.run( "MATCH (n:Lugar WHERE n.clima = '" + clima + "' RETURN n.nombre");
+                    LinkedList<String> myactors = new LinkedList<String>();
+                    List<Record> registros = result.list();
+                    for (int i = 0; i < registros.size(); i++) {
+                   	 //myactors.add(registros.get(i).toString());
+                   	 myactors.add(registros.get(i).get("nombre").asString());
+                    }
+                    
+                    return myactors;
+                }
+            } );
+            
+            return actors;
+        }
+   }
+   
     public String insertMovie(final String title, final int releaseYear, final String tagline) {
     	try ( Session session = driver.session() )
         {

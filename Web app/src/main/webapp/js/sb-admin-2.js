@@ -114,4 +114,25 @@
 		
 	});
 
+  $("#submit").click(function(){
+				
+		$.ajax( {
+			
+			type: "GET",
+			url: '/seccion40grupo5/MoviesByActor?continente=' + $('#continente').val()  + '&clima=' + $('#clima').val(),
+			success: function(data) {
+				//alert("Result" + data.resultado);
+			    var htmlLugarList = '<ul>';
+				$.each(data.peliculas, function(i,item){
+					  htmlLugarList += '<li>' + item + '</li>';
+				});
+				htmlLugarList += '</ul>';
+				$('#div-listado-lugares').html("");
+				$('#div-listado-lugares').append(htmlLugarList);
+			}
+		} );
+		
+		
+	});
+
 })(jQuery); // End of use strict
