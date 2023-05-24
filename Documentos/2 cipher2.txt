@@ -3,12 +3,52 @@ CREATE(Ignacio:Person{nombre:'Ignacio Méndez', fecha:2003,sexo:'m',presupuesto:
 CREATE(Jimena:Person{nombre:'Jimena López', fecha:2003,sexo:'f',presupuesto:6000,vive:'Guatemala'})
 CREATE(Ariela:Person{nombre:'Ariela Mishaan', fecha:2003,sexo:'f',presupuesto:3000,vive:'Guatemala'})
 CREATE(Tanya:Person{nombre:'Tanya Carias', fecha:1998,sexo:'f',presupuesto:100,vive:'Guatemala'})
+CREATE(Ana:Person{nombre:'Ana Cast', fecha:2003,sexo:'f',presupuesto:800,vive:'Guatemala'})
+CREATE(Alan:Person{nombre:'Alan Mishaan', fecha:2005,sexo:'m',presupuesto:1000,vive:'Guatemala'})
+CREATE(JuanP:Person{nombre:'Juan Pablo Najera', fecha:2004,sexo:'m',presupuesto:3700,vive:'Guatemala'})
+CREATE(Jack:Person{nombre:'Jack Mishaan', fecha:2007,sexo:'m',presupuesto:3000,vive:'Guatemala'})
+CREATE(Jorge:Person{nombre:'Jorge Morales', fecha:2003,sexo:'m',presupuesto:2000,vive:'Guatemala'})
+CREATE(Paula:Person{nombre:'Paula Melendez', fecha:2003,sexo:'f',presupuesto:10000,vive:'Guatemala'})
+CREATE(Rodolfo:Person{nombre:'Rodolfo Dardón', fecha:2003,sexo:'m',presupuesto:5000,vive:'Guatemala'})
+CREATE(Emilia:Person{nombre:'Emilia García', fecha:2003,sexo:'f',presupuesto:1200,vive:'Guatemala'})
+CREATE(Alina:Person{nombre:'Alina Carías', fecha:2003,sexo:'f',presupuesto:2000,vive:'Guatemala'})
+CREATE(Diana:Person{nombre:'Diana Sánchez', fecha:2003,sexo:'f',presupuesto:20000,vive:'Guatemala'})
+
 
 CREATE (BuenosAires: Lugar {nombre:'Buenos Aires', continente: 'Suramérica', pais: 'Argentina', idioma: 'español', atracciones: 2895, clima: 'Templado'})
 CREATE (NYC: Lugar {nombre:'New York City', continente: 'Norteamérica', pais: 'Estados Unidos', idioma: 'inglés', atracciones: 6312, clima: 'Frío'})
 CREATE (Santorini: Lugar {nombre:'Santorini', continente: 'Europa', pais: 'Grecia', idioma: 'griego', atracciones: 913, clima: 'Templado'})
 CREATE (Miami: Lugar {nombre:'Miami', continente: 'Norteamérica', pais: 'Estados Unidos', idioma: 'inglés', atracciones: 1679, clima: 'Calor'})
 CREATE (Cairo: Lugar {nombre:'Cairo', continente: 'África', pais: 'Egipto', idioma: 'árabe', atracciones: 1721, clima: 'Calor'})
+CREATE (Paris: Lugar {nombre:'París', continente: 'Europa', pais: 'Francia', idioma: 'fracés', atracciones: 8431, clima: 'Templado'})
+CREATE (Tegucigalpa: Lugar {nombre:'Tegucigalpa', continente: 'Centroamérica', pais: 'Honduras', idioma: 'español', atracciones: 73, clima: 'Calor'})
+CREATE (Retalhuleu: Lugar {nombre:'Retalhuleu', continente: 'Centroamérica', pais: 'Guatemala', idioma: 'español', atracciones: 5, clima: 'Calor'})
+CREATE (CMX: Lugar {nombre:'Ciudad de México', continente: 'Norteamérica', pais: 'México', idioma: 'español', atracciones: 2021, clima: 'Templado'})
+CREATE (Sydney: Lugar {nombre:'Sydney', continente: 'Oceanía', pais: 'Australia', idioma: 'inglés', atracciones: 2397, clima: 'Templado'})
+CREATE (Panama: Lugar {nombre:'Ciudad de Panamá', continente: 'Centroamérica', pais: 'Panamá', idioma: 'español', atracciones: 772, clima: 'Calor'})
+CREATE (Yellowstone: Lugar {nombre:'Yellowstone', continente: 'Norteamérica', pais: 'Estados Unidos', idioma: 'inglés', atracciones: 193, clima: 'Frío'})
+CREATE (Tokyo: Lugar {nombre:'Tokyo', continente: 'Asia', pais: 'Japón', idioma: 'japonés', atracciones: 12814, clima: 'Templado'})
+CREATE (Orlando: Lugar {nombre:'Orlando', continente: 'Norteamérica', pais: 'Estados Unidos', idioma: 'inglés', atracciones: 1579, clima: 'Calor'})
+CREATE (SanSalvador: Lugar {nombre:'San Salvador', continente: 'Centroamérica', pais: 'El Salvador', idioma: 'español', atracciones: 135, clima: 'Calor'})
+CREATE (Bahamas: Lugar {nombre:'Bahamas', continente: 'Norteamérica', pais: 'Bahamas', idioma: 'inglés', atracciones: 1538, clima: 'Templado'})
+CREATE (Bucarest: Lugar {nombre:'Bucarest', continente: 'Europa', pais: 'Rumania', idioma: 'Rumano', atracciones: 1344, clima: 'Frío'})
+CREATE (Madrid: Lugar {nombre:'Madrid', continente: 'Europa', pais: 'España', idioma: 'español', atracciones: 3596, clima: 'Templado'})
+CREATE (Houston: Lugar {nombre:'Houston', continente: 'Norteamérica', pais: 'Estados Unidos', idioma: 'inglés', atracciones: 1205, clima: 'Templado'})
+CREATE (Bogota: Lugar {nombre:'Bogota', continente: 'Suramérica', pais: 'Colombia', idioma: 'español', atracciones: 1450, clima: 'Calor'})
+CREATE (Belmopan: Lugar {nombre:'Belmopán', continente: 'Centroamérica', pais: 'Belice', idioma: 'inglés', atracciones: 33, clima: 'Calor'})
+CREATE (Venecia: Lugar {nombre:'Venecia', continente: 'Europa', pais: 'Italia', idioma: 'italiano', atracciones: 1983, clima: 'Templado'})
+CREATE (SanJose: Lugar {nombre:'San José', continente: 'Centroamérica', pais: 'Costa Rica', idioma: 'español', atracciones: 511, clima: 'Calor'})
+CREATE (Londres: Lugar {nombre:'Londres', continente: 'Europa', pais: 'Inglaterra', idioma: 'inglés', atracciones: 1650, clima: 'Frío'})
+CREATE (Seul: Lugar {nombre:'Seúl', continente: 'Asia', pais: 'Corea del Sur', idioma: 'coreano', atracciones: 2637, clima: 'Calor'})
+CREATE (Berne: Lugar {nombre:'Berne', continente: 'Europa', pais: 'Suiza', idioma: 'aleman', atracciones: 1998, clima: 'Frío'})
+CREATE (Estocolmo: Lugar {nombre:'Estocolmo', continente: 'Europa', pais: 'Suecia', idioma: 'sueco', atracciones: 987, clima: 'Frío'})
+CREATE (Roma: Lugar {nombre:'Roma', continente: 'Europa', pais: 'Italia', idioma: 'italiano', atracciones: 1983, clima: 'Templado'})
+CREATE (Managua: Lugar {nombre:'Managua', continente: 'Centroamérica', pais: 'Nicaragua', idioma: 'español', atracciones: 1430, clima: 'Calor'})
+CREATE (Capadocia: Lugar {nombre:'Capadocia', continente: 'Europa', pais: 'Turquía', idioma: 'turco', atracciones: 2198, clima: 'Calor'})
+CREATE (Vienna: Lugar {nombre:'Vienna', continente: 'Europa', pais: 'Austria', idioma: 'aleman', atracciones: 768, clima: 'Templado'})
+CREATE (Vaticano: Lugar {nombre:'Vaticano', continente: 'Europa', pais: 'El Vaticano', idioma: 'italiano', atracciones: 2, clima: 'Templado'})
+CREATE (Amsterdam: Lugar {nombre:'Amsterdam', continente: 'Europa', pais: 'Holanda', idioma: 'aleman', atracciones: 3209, clima: 'Frío'})
+
 
 CREATE
 (Diego)-[:FUE]->(BuenosAires),
@@ -22,5 +62,75 @@ CREATE
 (Ariela)-[:FUE]->(NYC),
 (Ariela)-[:GUSTO]->(NYC),
 (Tanya)-[:QUIERE_IR]->(Cairo),
+(Ana)-[:QUIERE_IR]->(Paris),
+(Ana)-[:FUE]->(Tegucigalpa),
+(Ana)-[:GUSTO]->(Retalhuleu),
+(Ana)-[:GUSTO]->(CMX),
+(Alan)-[:QUIERE_IR]->(Sydney),
+(Alan)-[:FUE]->(Miami),
+(Alan)-[:FUE]->(Panama),
+(Alan)-[:GUSTO]->(Yellowstone),
+(JuanP)-[:QUIERE_IR]->(Tokyo),
+(JuanP)-[:FUE]->(Orlando),
+(JuanP)-[:FUE]->(SanSalvador),
+(Jack)-[:QUIERE_IR]->(Bahamas),
+(Jack)-[:QUIERE_IR]->(Bucarest),
+(Jack)-[:FUE]->(NYC),
+(Jack)-[:FUE]->(Panama),
+(Jack)-[:GUSTO]->(NYC),
+(Jorge)-[:QUIERE_IR]->(Madrid),
+(Jorge)-[:FUE]->(Miami),
+(Jorge)-[:FUE]->(SanSalvador),
+(Jorge)-[:FUE]->(Orlando),
+(Jorge)-[:GUSTO]->(Orlando),
+(Jorge)-[:GUSTO]->(SanSalvador),
+(Paula)-[:QUIERE_IR]->(Paris),
+(Paula)-[:FUE]->(Houston),
+(Paula)-[:FUE]->(SanSalvador),
+(Paula)-[:FUE]->(Houston),
+(Paula)-[:FUE]->(Bogota),
+(Paula)-[:FUE]->(Tegucigalpa),
+(Paula)-[:FUE]->(belmopan),
+(Paula)-[:FUE]->(Panama),
+(Paula)-[:NO_GUSTO]->(Panama),
+(Paula)-[:GUSTO]->(Tegucigalpa),
+(Rodolfo)-[:QUIERE_IR]->(Tokyo),
+(Rodolfo)-[:FUE]->(CMX),
+(Rodolfo)-[:FUE]->(Tegucigalpa),
+(Rodolfo)-[:FUE]->(SanSalvador),
+(Rodolfo)-[:GUSTO]->(CMX),
+(Emilia)-[:QUIERE_IR]->(Venecia),
+(Emilia)-[:FUE]->(Orlando),
+(Emilia)-[:FUE]->(CMX),
+(Emilia)-[:FUE]->(Bogota),
+(Emilia)-[:FUE]->(SanJose),
+(Emilia)-[:FUE]->(SanSalvador),
+(Emilia)-[:NO_GUSTO]->(SanSalvador),
+(Emilia)-[:GUSTO]->(Orlando),
+(Emilia)-[:GUSTO]->(CMX),
+(Alina)-[:QUIERE_IR]->(Londres),
+(Alina)-[:QUIERE_IR]->(Seul),
+(Alina)-[:FUE]->(Paris),
+(Alina)-[:FUE]->(Berne),
+(Alina)-[:FUE]->(Madrid),
+(Alina)-[:FUE]->(Estocolmo),
+(Alina)-[:FUE]->(Roma),
+(Alina)-[:FUE]->(NYC),
+(Alina)-[:FUE]->(Managua),
+(Alina)-[:NO_GUSTO]->(Estocolmo),
+(Alina)-[:GUSTO]->(Managua),
+(Diana)-[:QUIERE_IR]->(Cairo),
+(Diana)-[:QUIERE_IR]->(Capadocia),
+(Diana)-[:FUE]->(Miami),
+(Diana)-[:FUE]->(Madrid),
+(Diana)-[:FUE]->(Paris),
+(Diana)-[:FUE]->(Vienna),
+(Diana)-[:FUE]->(Venecia),
+(Diana)-[:FUE]->(Vaticano),
+(Diana)-[:FUE]->(amsterdam),
+
+
+
+
 
 

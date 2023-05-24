@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Web app/src/main/java"/>
+	<classpathentry kind="lib" path="Web app/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="Web app/neo4j-java-driver-4.2.5.jar"/>
+	<classpathentry kind="lib" path="Web app/reactive-streams-1.0.3.jar"/>
+	<classpathentry kind="lib" path="Web app/servlet-api.jar"/>
+	<classpathentry kind="lib" path="Web app/src/main/webapp/WEB-INF/lib/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="Web app/src/main/webapp/WEB-INF/lib/neo4j-java-driver-4.2.5.jar"/>
+	<classpathentry kind="lib" path="Web app/src/main/webapp/WEB-INF/lib/reactive-streams-1.0.3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="output" path="Web app/build/classes"/>
+</classpath>
