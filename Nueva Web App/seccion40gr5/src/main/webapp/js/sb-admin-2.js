@@ -60,7 +60,7 @@
 		$.ajax( {
 			
 			type: "GET",
-			url: '/seccion40grupo5/HelloServlet',
+			url: '/seccion40gr5/HelloServlet',
 			success: function(data) {
 				//alert("Result" + data.resultado);
 			    var htmlActorsList = '<ul>';
@@ -82,7 +82,7 @@
 		$.ajax( {
 			
 			type: "GET",
-			url: '/seccion40grupo5/MoviesByActor?actor_name=' + $('#txt-actor').val(),
+			url: '/seccion40gr5/MoviesByActor?actor_name=' + $('#txt-actor').val(),
 			success: function(data) {
 				//alert("Result" + data.resultado);
 			    var htmlMovieList = '<ul>';
@@ -105,7 +105,7 @@
 		$.ajax( {
 			
 			type: "GET",
-			url: '/seccion40grupo5/SaveMovieServlet?title=' + $('#txt-movie-title').val() + '&release_year=' + $('#txt-movie-release').val() + '&tagline=' + $('#txt-movie-tagline').val() ,
+			url: '/seccion40gr5/SaveMovieServlet?title=' + $('#txt-movie-title').val() + '&release_year=' + $('#txt-movie-release').val() + '&tagline=' + $('#txt-movie-tagline').val() ,
 			success: function(data) {
 			    alert("Resultado: " + data.resultado);
 			}
@@ -119,7 +119,7 @@
 		$.ajax( {
 			
 			type: "GET",
-			url: '/seccion40grupo5/MoviesByActor?continente=' + $('#continente').val()  + '&clima=' + $('#clima').val(),
+			url: '/seccion40gr5/MoviesByActor?continente=' + $('#continente').val()  + '&clima=' + $('#clima').val(),
 			success: function(data) {
 				//alert("Result" + data.resultado);
 			    var htmlLugarList = '<ul>';

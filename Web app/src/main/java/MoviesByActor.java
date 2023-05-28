@@ -47,7 +47,7 @@ public class MoviesByActor extends HttpServlet {
 	 	
 	 	String myContinente = request.getParameter("continente");
 	 	String myClima = request.getParameter("clima");
-	 	 try ( EmbeddedNeo4j greeter = new EmbeddedNeo4j( "bolt://3.208.92.10:7687", "neo4j", "abrasives-educators-bucket" ) )
+	 	 try ( EmbeddedNeo4j greeter = new EmbeddedNeo4j( "bolt://44.201.21.29:7687", "neo4j", "spears-compresses-whirl" ) )
 	        {
 			 	LinkedList<String> paisesContinente = greeter.getLugarByContinente(myContinente);
 			 	LinkedList<String> paisesClima = greeter.getLugarByClima(myClima);
