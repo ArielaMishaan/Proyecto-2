@@ -1,0 +1,576 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+#topbar{
+    background-color: white;
+    overflow: hidden;
+    text-align: left;
+}
+
+.topbar a{
+    float: center;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topbar a:hover {
+    background-color:rgb(248, 249, 252);
+    color:rgb(57, 102, 153);
+}
+  
+.topbar a.active {
+    background-color: rgb(57, 102, 153);
+    color: white;
+}
+
+#banner{
+    /*background-image: linear-gradient(rgba(57,102,153,0.1),rgb(248, 249, 252)),url(img/playa2.jpg);*/ 
+    background-image: linear-gradient(rgba(25, 52, 82, 0.8),rgba(28, 57, 89, 0.8)),url(img/playa2.jpg); 
+    /*background: url(img/playa2.jpg);*/
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.banner-text{
+    text-align: top;
+    color: #fff;
+    padding-top: 180px;
+}
+
+.banner-text p{
+    font-style: italic;
+    color:rgb(248, 249, 252);
+    font-weight: bold;
+}
+
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 60px;
+}
+
+.banner h3{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #777;
+}
+.banner-container form{
+    width: 280px;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.banner-container form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.banner-container ::placeholder{
+    color:#777;
+}
+
+.banner-container btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.banner-container form button{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: rgb(57, 102, 153);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.banner-container{
+    width: 360px;
+    height: 400px;
+    margin: 8% auto;
+    background: #fff;
+    border-radius: 5px; 
+    position: relative; 
+    overflow: hidden;
+}
+
+#Form2{
+    left: 450px;
+}
+#Form3{
+    left: 450px;
+}
+
+.banner-container .step-row{
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+}
+
+.banner-container .step-row .step-col{
+    width: 120px;
+    text-align: center;
+    color: #333;
+    position: relative; 
+}
+
+.banner-container .step-row #progress{
+    position: absolute;
+    height: 40px;
+    width: 120px;
+    background:linear-gradient(to right, #648ead,#1e6390);
+    transition: 1s;
+}
+
+/*.banner-container .step-row #progress::after{
+    content:'';
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20;
+    top: 0;
+    border-left: 20px solid #1e6390 ;
+}*/
+
+
+
+
+
+.banner-btn{
+    margin: 70px auto 0;
+    color: white;
+}
+.banner-btn a{
+    width: 150px;
+    text-decoration:none;
+    display:inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: white;
+    border: 2px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+.banner-btn a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition:0.5s;
+}
+.banner-btn a:hover span{
+    width:100%;
+}
+.banner-btn a:hover{
+   color: black;
+}
+
+#sideNav{
+    width: 120px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background:rgb(57, 102, 153);
+    z-index: 2;
+    color:rgb(248, 249, 252);
+    transition: 0.5s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    background:rgb(57, 102, 153);
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menuBtn img {
+    width: 20px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 770px){
+    .banner-text h1{
+        font-size: 44px;
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+/**--feature--**/
+#feature{
+    width: 100%;
+    padding: 70px 0;
+}
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p{
+    margin: auto;
+    font-size: 30px;
+    color:rgb(57, 102, 153);
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.title-text h1{
+    font-size: 50px;
+}
+
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.features{
+    flex-basis: 50%;
+}
+.features h1{
+    font-size: 25px;
+}
+
+.populares-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+.populares-img img{
+    width: 250px;
+    height: 150px;
+}
+.features h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color:rgb(57, 102, 153);
+}
+.populares-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.populares-text{
+    padding: 0 0px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 770px){
+    .title-text h1{
+        font-size: 35px;
+    }
+    .features{
+        flex-basis:100%;
+    }
+    .features-img{
+        flex-basis:100%;
+    }
+    .features-img img{
+        width: 100%;
+    }
+}
+
+/*--- lugares populares --*/
+#lugaresPop{
+    width: 100%;
+    padding: 70px;
+}
+.lugaresPop-box{
+    width: 80%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.single-lugar{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+}
+.single-lugar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),rgb(57, 102, 153));
+    opacity: 0;
+    transition: 1s;
+}
+.single-lugar:hover .overlay{
+    opacity:1;
+}
+.lugar-desc{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 30px auto;
+    width: 60%;
+}
+.lugar-desc p{
+    font-size: 16px;
+}
+.lugar-desc h3{
+    font-size: 20px;
+}
+.single-lugar:hover .lugar-desc{
+    bottom: 10%;
+    opacity: 1;
+}
+@media screen and (max-width: 770px){
+    .single-lugar{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .lugar-desc p{
+        font-size:10px;
+    }
+    .lugar-desc h3{
+        font-size: 15px;
+    }
+    hr{
+        margin: 5px auto;
+    }
+    .single-lugar:hover .lugar-desc{
+        bottom: 10%;
+    }
+}
+
+/* --- reseñas ----*/
+
+#testimonials{
+    width: 100%;
+    padding: 70px 0;
+}
+.testimonial-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.testimonial-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #00968814;
+    cursor: pointer;
+    transition: transform .5s;
+}
+.testimonial-col p{
+    font-size: 14px;
+}
+.testimonial-col h4{
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+.user2{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user2 img{
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+.user-info small{
+    margin-top: 0px;
+    color:rgb(57, 102, 153);
+}
+.testimonial-col:hover{
+    transform: translateY(-7px);
+}
+@media screen and (max-width: 770px){
+    .testimonial-col{
+        flex-basis: 100%;
+    }
+}
+
+/* -- footer--*/
+
+#pie{
+    paddint: 100px 0 20px;
+    background:rgb(199, 201, 207);
+    position: relative;
+}
+.pie-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: black;
+}
+.pie-left, .pie-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.pie-right{
+    text-align: right;
+}
+.pie-left{
+    text-align: left;
+}
+.pie-row h1{
+    margin: 10px;
+    color: black;
+    font-size: 20px;
+}
+.pie-row p{
+    line-height: 35px;
+}
+.pie-left .fa, .pie-right .fa{
+    font-size: 20px;
+    color:rgb(57, 102, 153);
+    margin: 10px;
+}
+.pie-img{
+    max-width: 370px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%)
+}
+
+/*.heading2{
+    text-align: center;
+    padding:2.5rem 0
+}
+
+.heading2 span{
+    font-size: 2.5rem;
+    background: rgb(57, 102, 153);
+    color: rgb(209, 215, 222);
+    border-radius: .3rem;
+    padding: 1rem 1rem;
+    display: inline-block;
+}
+
+#Recomendaciones{
+    background: linear-gradient(rgba(0,0,0,0.5),rgb(248, 249, 252)),url(img/playa2.jpg);
+    background: url(img/playa2.jpg);
+    background-size:cover;
+    background-position: top;
+    height: 20vh;
+}
+
+@media screen and (max-width: 770px){
+    .Recomendaciones-col{
+        flex-basis: 100%;
+    }
+    html{
+        font-size: 50%;
+    }
+
+    .heading2 span{
+        font-size: 2.5rem;
+    }
+}
+
+.Recomendaciones .row form .inputBox h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color:rgb(57, 102, 153);
+}
+.Recomendaciones .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.Recomendaciones .row .image{
+    flex:1 1 40rem;
+}
+.Recomendaciones .row .image img{
+    width: 100%;
+}
+
+.Recomendaciones .row .image form{
+    flex:1 1 40rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+    border-radius: .5rem;
+}
+.Recomendaciones .row form .inputBox{
+    padding: .5rem 0;
+}
+.Recomendaciones .row form .inputBox input{
+    width: 100%;
+    padding: 1rem;
+    border: 1rem solid rgba(0,0,0,0.1);
+    font-size: 1.7rem;
+    color:rgb(57, 102, 153);
+    text-transform: none;
+}*/
