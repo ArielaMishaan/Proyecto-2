@@ -1,0 +1,9 @@
+1. No se debe de instalar nada, solamente se debe de ingresar al link al servidor dado por Moises:
+	http://35.219.158.151:8080/
+	usr: admin
+	passwd: uvg2023
+2. Abrir: /seccion40grupo5
+3. Dirigirse a la página de "Recomendaciones", también se puede apacha el botón "Ingresar".
+4. Colocar los datos que se le solicitan. 
+5. Al finalizar el paso anterior apachar el botón "Submit"
+6. Bajar en la página para poder ver las recomendaciones (solamente salen los nombres de las ciudades). 
